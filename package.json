@@ -1,0 +1,14 @@
+{
+  "name": "RouteNViews",
+  "version": "1.0.0",
+  "description": "Simple nultiple ui-view tags in ui-routing example",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ui-route"
+  ],
+  "author": "Chuck",
+  "license": "ISC"
+}

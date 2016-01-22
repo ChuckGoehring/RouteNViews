@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+  <head>
+    <meta charset="utf-8">
+	
+    <!-- using twitter bootstrap, but of course -->
+    <link rel="stylesheet" type="text/css" href="/RouteNViews/bower_components/bootstrap-css-only/css/bootstrap.css" />
+    <!-- styles for ng-animate are located here -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />	
+	
+	
+
+    <!-- Include angular.js, angular-animate.js and angular-ui-router.js-->
+    <script src="/RouteNViews/bower_components/angular/angular.js"></script>
+    <script src="../Scripts/angular-animate.js"></script>
+    <script src="/RouteNViews/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+
+
+	
+	
+	
+    <!-- app.js declares the uiRouterSample module and adds items to $rootScope, and defines
+         the "home" and "about" states
+    -->
+    <script src="app.js"></script>
+
+
+    <!-- could easily use a custom property of the state here instead of 'name' -->
+    <title ng-bind="$state.current.name + ' - MultiExperiment'">ui-router</title>
+	
+	
+	<style>
+	.diver {
+		border: 1px solid black; height: 200px;
+	}
+	
+	</style>
+  </head>
+  
+  <body>
+	<h1>Hello MultiExperiment</h1>
+	<p>This is just a vey simple experiment from the early pages of the docs.</p>
+	
+	
+	<div ng-controller='MyController'>
+		<div ng-include="'templates/nav_plain.html'"> </div>
+
+	
+		<table style='border: solid black thin; width: 100%;'>
+		<tr><td style=' width: 10%;'>
+		<p>Unnamed ui:</p>
+			<div class='diver' >
+				<ui-view> 
+				
+				</ui-view> 
+			</div>	
+		</td><td style=' width: 10%;'>
+		
+		<p>alt ui:</p>	
+			<div class='diver' >		
+				<ui-view='mview' /> 
+			</div>
+		</td></tr>
+		</table>
+	
+
+		<button type='button' ng-click='showstate()'>showstate</button>
+
+		<button type='button' ng-click='dumpstate()'>dumpstate</button>
+	</div>
+	
+  </body>
+</html>
