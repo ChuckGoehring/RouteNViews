@@ -136,19 +136,6 @@ var app = angular.module('app', ['ui.router', 'ngAnimate'])
       })
 
 
-	 	
-      ///////////
-      //Brown Horse//
-      ///////////       
-      .state('brownhorse', {
-        url: '/brownhorse',      
-         views: {
-          '': {
-            template: '<img src="images/brownhorse.jpg" />'
-          }
-
-        }
-      }) ;
 	  
 	  	  
 
