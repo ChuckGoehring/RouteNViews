@@ -1,5 +1,5 @@
 // Make sure to include the `ui.router` module as a dependency
-var app = angular.module('app', ['ui.router', 'ngAnimate'])
+var app = angular.module('app', ['ui.router']) //, 'ngAnimate'
 
 
 .controller('MyController', ['$scope', '$state', function($scope, $state) {   
