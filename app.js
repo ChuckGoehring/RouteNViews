@@ -128,7 +128,7 @@ var app = angular.module('app', ['ui.router', 'ngAnimate'])
           '': {
             template: '<img src="images/spottedhorse.jpg" />'
           } ,
-		  'mview@horses': {
+		  'mview@': {
             template: '<img src="images/blackhorse.jpg" />'
           }
 
